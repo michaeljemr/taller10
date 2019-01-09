@@ -20,9 +20,7 @@ public class Employee
         
     private final float rmu = (float) 386.0;
     //salario del employee
-    private float salary;
-    //porcentaje de bonus
-    private float bonusPercentage;    
+    private float salary,bonusPercentage;
     //variable de tipo employeeType
     private EmployeeType employeeType;    
 

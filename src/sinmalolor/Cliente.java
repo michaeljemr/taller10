@@ -9,14 +9,9 @@ import conmalolor.*;
 
 
 public class Cliente {
-    public String Nombre;
-    public String Apellido;
-    public String Cedula;
-    private String provincia;
-    private String pais;
-    private String ciudad;
-    private String direccion;
-    private String telefono;
+    public String Nombre,Apellido,Cedula,provincia,pais,
+    ciudad,direccion,telefono;
+    
     
     public Cliente(String Nombre, String Apellido, String Cedula) {
         this.Nombre = Nombre;
