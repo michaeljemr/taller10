@@ -13,8 +13,11 @@ import java.util.Date;
 
 public class Employee
 {   
-    public enum EmployeeType { Worker, Supervisor, Manager }
-    
+
+    public static enum EmployeeType {
+        Worker, Supervisor, Manager
+    }
+        
     private final float rmu = (float) 386.0;
     //salario del employee
     private float salary;
