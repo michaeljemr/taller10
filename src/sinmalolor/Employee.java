@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package conmalolor;
+package sinmalolor;
 
+import conmalolor.*;
 import java.time.LocalDate;
 import java.time.ZoneId;
 import java.util.Date;
