@@ -9,8 +9,9 @@ import conmalolor.*;
 
 
 public class Cliente {
-    public String Nombre,Apellido,Cedula,provincia,pais,
-    ciudad,direccion,telefono;
+    
+    private String Nombre,Apellido,Cedula,provincia,pais,
+            ciudad,direccion,telefono;
     
     
     public Cliente(String Nombre, String Apellido, String Cedula) {
@@ -18,6 +19,78 @@ public class Cliente {
         this.Apellido = Apellido;
         this.Cedula = Cedula;
     }
+
+    /**
+     * @return the provincia
+     */
+    public String getProvincia() {
+        return provincia;
+    }
+
+    /**
+     * @param provincia the provincia to set
+     */
+    public void setProvincia(String provincia) {
+        this.provincia = provincia;
+    }
+
+    /**
+     * @return the pais
+     */
+    public String getPais() {
+        return pais;
+    }
+
+    /**
+     * @param pais the pais to set
+     */
+    public void setPais(String pais) {
+        this.pais = pais;
+    }
+
+    /**
+     * @return the ciudad
+     */
+    public String getCiudad() {
+        return ciudad;
+    }
+
+    /**
+     * @param ciudad the ciudad to set
+     */
+    public void setCiudad(String ciudad) {
+        this.ciudad = ciudad;
+    }
+
+    /**
+     * @return the direccion
+     */
+    public String getDireccion() {
+        return direccion;
+    }
+
+    /**
+     * @param direccion the direccion to set
+     */
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
+    }
+
+    /**
+     * @return the telefono
+     */
+    public String getTelefono() {
+        return telefono;
+    }
+
+    /**
+     * @param telefono the telefono to set
+     */
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
+   
+    
 
     public String getNombre() {
         return Nombre;
@@ -44,15 +117,15 @@ public class Cliente {
     }
 
     public String mostrarLocation(){
-        String dir = pais + " - " + provincia + " - " + ciudad;
-        return  dir+ "\n" + direccion;
+        String dir = getPais() + " - " + getProvincia() + " - " + getCiudad();
+        return  dir+ "\n" + getDireccion();
     }
     
     public void setLocation(String nuevoPais, String ciudadnueva, String provinciaNueva, String direccionNueva){
-        pais = nuevoPais;
-        ciudad = ciudadnueva;
-        provincia = provinciaNueva;
-        direccion = direccionNueva;
+        setPais(nuevoPais);
+        setCiudad(ciudadnueva);
+        setProvincia(provinciaNueva);
+        setDireccion(direccionNueva);
     }
 
     

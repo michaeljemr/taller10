@@ -16,26 +16,28 @@ public class Example {
     public List<Cliente> clientes;
     public List<Employee> empleados;
     
+    
     public void MostrarInformacion(Cliente cliente){
-        if(cliente.Nombre.equals("") && cliente.Nombre.length()> 16){
+        if(cliente.getNombre().equals("") && cliente.getNombre().length()> 16){
                 System.out.println("ingreso de nombre incorrecto");
         }else{
             System.out.println("ingreso de nombre correcto");
 
         }
-        if(cliente.Apellido.equals("") && cliente.Apellido.length()> 16){
+        if(cliente.getApellido().equals("") && cliente.getApellido().length()> 16){
             System.out.println("ingreso de apellido incorrecto");
         }else{
             System.out.println("ingreso de apellido correcto");
 
         }
-        if(!cliente.Cedula.equals("") && cliente.Cedula.length()< 10){
+        
+        if(!cliente.getCedula().equals("") && cliente.getCedula().length()< 10){
             System.out.println("ingreso de cedula incorrecto");
         }else{
             System.out.println("ingreso de cedula correcto");
 
         }
-        System.out.println("Nombre: " + cliente.Nombre + ", Apellido: " + cliente.Apellido + ", con numero de cedula: " + cliente.Cedula );
+        System.out.println("Nombre: " + cliente.getNombre() + ", Apellido: " + cliente.getApellido() + ", con numero de cedula: " + cliente.getCedula() );
         
     }
     
