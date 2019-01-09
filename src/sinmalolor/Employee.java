@@ -11,7 +11,7 @@ import java.time.ZoneId;
 import java.util.Date;
 
 
-public class Employee
+public class Employee implements calculosEmployee
 {   
 
     public static enum EmployeeType {
@@ -31,6 +31,7 @@ public class Employee
         this.employeeType = employeeType;    
     }    
     //calcula el salario dependiendo del tipo de trabajador y entrega el décimo correspondiente cada 2 meses
+    @Override
     public float cs()
     {
         Date date = new Date();
@@ -55,6 +56,7 @@ public class Employee
         return 0.0F;
     }
     //calcula el bonus anual
+    @Override
     public float CalculateYearBonus() 
     {
         switch (employeeType)
